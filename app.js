@@ -25,7 +25,7 @@ cuadro.forEach((identificador) => {
 });
 
 function movertopo() {
-  timepotopo = setInterval(cuadroazar, 700);
+  tiempotopo = setInterval(cuadroazar, 700);
 }
 movertopo();
 
@@ -35,7 +35,7 @@ function cuentaregresiva() {
   if (tiempoactual === 0);
   {
     clearInterval(idtiempo);
-    clearInterval(timepotopo);
+    clearInterval(tiempotopo);
     alert(
       "Se acabó el tiempo, tu puntaje fue:" + resultado + "topos atrapados"
     );
