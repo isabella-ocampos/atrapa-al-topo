@@ -20,5 +20,28 @@ cuadrado.forEach (identificador => {
       puntaje.textContent = resultado;
       posiciontopo = null;
     }
-  })
-})
+  });
+});
+
+function moverTopo() {
+  tiempoTopo = setInterval(cuadroAzar, 700);
+}
+
+moverTopo();
+
+function cuentaRegresiva() {
+  tiempoActual--;
+  tiempoFaltante.textContent = tiempoActual;
+
+  if (tiempoActual === 0) {
+    clearInterval(idTiempo);
+    clearInterval(tiempoTopo);
+    alert(
+      "Eres muy malo pero por lo menos " +
+        resultado +
+        " fueron tus topos atrapados."
+    );
+  }
+}
+
+let idTiempo = setInterval(cuentaRegresiva, 1000);
