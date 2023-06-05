@@ -2,16 +2,15 @@ h1,
 h2 {
   text-align: center;
   font-family: "Courier New", Courier, monospace;
-  color: crimson;
+  color: blue;
 }
 
 .cuadrado {
   width: 100px;
   height: 100px;
   border-style: double;
-  border-color: palevioletred;
+  border-color: blue;
 }
-
 .cuadricula {
   display: flex;
   flex-flow: row wrap;
@@ -23,6 +22,6 @@ h2 {
 }
 
 .topo {
-  background-image: url("topo.png");
+  background-image: url("topo.jpg");
   background-size: cover;
 }

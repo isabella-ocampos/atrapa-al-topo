@@ -39,5 +39,5 @@ function cuentaregresiva() {
     alert(
       "Se acabó el tiempo, tu puntaje fue:" + resultado + "topos atrapados"
     );
-  }
-}
+  };
+});
